@@ -1,3 +1,3 @@
 @echo off
-python "G:\python\pythonkhazana\class-opener.py"
+python "path\class-opener.py"
 pause
