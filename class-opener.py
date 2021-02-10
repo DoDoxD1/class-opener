@@ -1,215 +1,220 @@
 import datetime
 import subprocess
+from typing import IO
 
-def bio():
-    subprocess.call(['C:\Program Files\Google\Chrome\Application\chrome.exe','https://cuchd.blackboard.com/ultra/courses/_9905_1/outline'])
+def compWork():
+    subprocess.call(['C:\Program Files\Google\Chrome\Application\chrome.exe','https://cuchd.blackboard.com/ultra/courses/_15591_1/outline'])
 def comt():
-    subprocess.call(['C:\Program Files\Google\Chrome\Application\chrome.exe','https://cuchd.blackboard.com/ultra/courses/_9908_1/outline'])
+    subprocess.call(['C:\Program Files\Google\Chrome\Application\chrome.exe','https://cuchd.blackboard.com/ultra/courses/_16923_1/outline'])
 def comp():
-    subprocess.call(['C:\Program Files\Google\Chrome\Application\chrome.exe','https://cuchd.blackboard.com/ultra/courses/_9906_1/outline'])
+    subprocess.call(['C:\Program Files\Google\Chrome\Application\chrome.exe','https://cuchd.blackboard.com/ultra/courses/_16776_1/outline'])
 def maths():
-    subprocess.call(['C:\Program Files\Google\Chrome\Application\chrome.exe','https://cuchd.blackboard.com/ultra/courses/_9810_1/outline'])
-def cad():
-    subprocess.call(['C:\Program Files\Google\Chrome\Application\chrome.exe','https://cuchd.blackboard.com/ultra/courses/_9809_1/outline'])
-def det():
-    subprocess.call(['C:\Program Files\Google\Chrome\Application\chrome.exe','https://cuchd.blackboard.com/ultra/courses/_9902_1/outline'])
-def dep():
-    subprocess.call(['C:\Program Files\Google\Chrome\Application\chrome.exe','https://cuchd.blackboard.com/ultra/courses/_9811_1/outline'])
-def ai():
-    subprocess.call(['C:\Program Files\Google\Chrome\Application\chrome.exe','https://cuchd.blackboard.com/ultra/courses/_9808_1/outline'])
+    subprocess.call(['C:\Program Files\Google\Chrome\Application\chrome.exe','https://cuchd.blackboard.com/ultra/courses/_17254_1/outline'])
+def IOT():
+    subprocess.call(['C:\Program Files\Google\Chrome\Application\chrome.exe','https://cuchd.blackboard.com/ultra/courses/_15901_1/outline'])
+def BEEEt():
+    subprocess.call(['C:\Program Files\Google\Chrome\Application\chrome.exe','https://cuchd.blackboard.com/ultra/courses/_16210_1/outline'])
+def BEEEp():
+    subprocess.call(['C:\Program Files\Google\Chrome\Application\chrome.exe','https://cuchd.blackboard.com/ultra/courses/_16147_1/outline'])
 def life():
-    subprocess.call(['C:\Program Files\Google\Chrome\Application\chrome.exe','https://cuchd.blackboard.com/ultra/courses/_9909_1/outline'])
-def pspt():
-    subprocess.call(['C:\Program Files\Google\Chrome\Application\chrome.exe','https://cuchd.blackboard.com/ultra/courses/_9807_1/outline'])
-def pspp():
-    subprocess.call(['C:\Program Files\Google\Chrome\Application\chrome.exe','https://cuchd.blackboard.com/ultra/courses/_9806_1/outline'])
+    subprocess.call(['C:\Program Files\Google\Chrome\Application\chrome.exe','https://cuchd.blackboard.com/ultra/courses/_17913_1/outline'])
+def cppt():
+    subprocess.call(['C:\Program Files\Google\Chrome\Application\chrome.exe','https://cuchd.blackboard.com/ultra/courses/_15736_1/outline'])
+def cppp():
+    subprocess.call(['C:\Program Files\Google\Chrome\Application\chrome.exe','https://cuchd.blackboard.com/ultra/courses/_15441_1/outline'])
+def phyt():
+    subprocess.call(['C:\Program Files\Google\Chrome\Application\chrome.exe','https://cuchd.blackboard.com/ultra/courses/_17522_1/outline'])
+def phyp():
+    subprocess.call(['C:\Program Files\Google\Chrome\Application\chrome.exe','https://cuchd.blackboard.com/ultra/courses/_17429_1/outline'])
 
 def monday(hour, minutes):
     if hour == 9:
         if minutes>45:
-            det()
+            comt()
         else:
             print('Class not started yet')
-    if hour == 10:
+    elif hour == 10:
         if minutes>45:
-            dep()
+            phyp()
         else:
-            det()
-    if hour == 11:
+            comt()
+    elif hour == 11:
         if minutes>45:
-            dep()
+            phyp()
         else:
-            dep()
-    if hour == 12:
+            phyp()
+    elif hour == 12:
         if minutes>45:
             print("Njoy lunch")
         else:
-            dep()
-    if hour == 13:
+            phyp()
+    elif hour == 13:
         if minutes>30:
             maths()
         else:
             print("Njoy lunch")
-    if hour == 14:
+    elif hour == 14:
         if minutes>30:
-            bio()
+            comp()
         else:
             maths()
+    elif hour == 15:
+        if minutes>30:
+            comp()
+        else:
+            comp()
     else:
         print("No class now njoy")
 def tuesday(hour, minutes):
     if hour == 9:
         if minutes>45:
-            life()
+            maths()
         else:
             print('Class not started yet')
-    if hour == 10:
+    elif hour == 10:
         if minutes>45:
-            maths()
-        else:
-            life()
-    if hour == 11:
-        if minutes>45:
-            comt()
+            compWork()
         else:
             maths()
-    if hour == 12:
+    elif hour == 11:
+        if minutes>45:
+            compWork()
+        else:
+            compWork()
+    elif hour == 12:
         if minutes>45:
             print("Njoy lunch")
         else:
-            comt()
-    if hour == 13:
+            compWork()
+    elif hour == 13:
         if minutes>30:
-            bio()
+            BEEEt()
         else:
             print("Njoy lunch")
+    elif hour == 14:
+        if minutes>30:
+            maths()
+        else:
+            BEEEt()
+    elif hour == 15:
+        if minutes>30:
+            life()
+        else:
+            maths()
     else:
         print("No class now njoy")
 def wednesday(hour, minutes):
     if hour == 9:
         if minutes>45:
-            ai()
+            cppp()
         else:
             print('Class not started yet')
     elif hour == 10:
         if minutes>45:
-            ai()
+            cppp()
         else:
-            ai()
+            cppp()
     elif hour == 11:
         if minutes>45:
-            cad()
+            maths()
         else:
-            ai()
+            cppp()
     elif hour == 12:
         if minutes>45:
             print("Njoy lunch")
         else:
-            cad()
-    if hour == 13:
+            maths()
+    elif hour == 13:
         if minutes>30:
-            det()
+            IOT()
         else:
             print("Njoy lunch")
-    if hour == 14:
+    elif hour == 14:
         if minutes>30:
-            maths()
+            IOT()
         else:
-            det()
+            IOT()
+    elif hour == 15:
+        if minutes>30:
+            phyt()
+        else:
+            IOT()
     else:
         print("No class now njoy")
 def thursday(hour, minutes):
     if hour == 9:
         if minutes>45:
-            maths()
+            phyt()
         else:
             print('Class not started yet')
     elif hour == 10:
         if minutes>45:
-            pspt()
+            BEEEt()
         else:
-            maths()
+            phyt()
     elif hour == 11:
         if minutes>45:
-            pspp()
+            print("Njoy lunch")
         else:
-            pspt()
+            BEEEt()
     elif hour == 12:
         if minutes>45:
-            print("Njoy lunch")
+            comt()
         else:
-            pspp()
+            print("Njoy lunch")
     elif hour == 13:
         if minutes>30:
-            comt()  
+            maths()  
         else:
-            print("Njoy lunch")
+            comt()
+    elif hour == 14:
+        if minutes>30:
+            cppp()  
+        else:
+            maths()
+    elif hour == 15:
+        if minutes>30:
+            cppp()  
+        else:
+            cppp()
     else:
         print("No class now njoy")
 def friday(hour, minutes):
     if hour == 9:
         if minutes>45:
-            cad()
+            BEEEt()
         else:
             print('Class not started yet')
     elif hour == 10:
         if minutes>45:
-            cad()
+            cppt()
         else:
-            cad()
+            BEEEt()
     elif hour == 11:
         if minutes>45:
-            bio()
+            cppt()
         else:
-            cad()
+            cppt()
     elif hour == 12:
         if minutes>45:
             print("Njoy lunch")
         else:
-            bio()
+            cppt()
     elif hour == 13:
         if minutes>30:
-            pspt()
+            phyt()
         else:
             print("Njoy lunch")
     elif hour == 14:
         if minutes>30:
-            pspp()
+            BEEEp()
         else:
-            pspt()
-    else:
-        print("No class now njoy")
-def saturday(hour, minutes):
-    if hour == 9:
-        if minutes>45:
-            det()
-        else:
-            print('Class not started yet')
-    elif hour == 10:
-        if minutes>45:
-            comp()
-        else:
-            det()
-    elif hour == 11:
-        if minutes>45:
-            comp()
-        else:
-            comp()
-    elif hour == 12:
-        if minutes>45:
-            print("Njoy lunch")
-        else:
-            comp()
-    elif hour == 13:
+            phyt()
+    elif hour == 15:
         if minutes>30:
-            pspp()
+            BEEEp()  
         else:
-            print("Njoy lunch")
-    elif hour == 14:
-        if minutes>30:
-            pspp()
-        else:
-            pspp()
+            BEEEp()
     else:
         print("No class now njoy")
 
@@ -227,8 +232,6 @@ def checkday(day):
         thursday(hour, minutes)
     elif day == 'friday':
         friday(hour, minutes)
-    elif day == 'saturday':
-        saturday(hour, minutes)
     else:
         print("Njoy no class!")
 
